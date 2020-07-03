@@ -1,0 +1,59 @@
+
+
+#logo-sks-steiner{
+	max-width: 530px;
+	margin: 0 auto;
+	display: block;
+	overflow: visible;
+}
+
+#logo{
+	animation: logo-animate: 2s 1s 2 forwards ease-out;
+	transform-origin: center;
+	opacity: 0;
+}
+#sks{
+	animation: sks-animate: 2s 1s 1 forwards ease-out;
+	transform-origin: center;
+	opacity: 0;
+}
+#steiner{
+	animation: steiner-animate: 2s 1s 1 forwards ease-out;
+	transform-origin: center;
+	opacity: 0;
+}
+
+@keyframes logo-animate{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	10%{
+		transform: scale(1.10);
+		opacity: 1;
+	}
+	20%,100%{
+		transform: scale(1)
+		opacity: 1;
+	}
+}
+
+@keyframes sks-animate{
+	0%,20%{
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	30%,100%{
+		transform: translateY(0px);
+		opacity: 1;
+}
+
+@keyframes steiner-animate{
+	0%,30%{
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	40%,100%{
+		transform: translateY(0px);
+		opacity: 1;
+}
